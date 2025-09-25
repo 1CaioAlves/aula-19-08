@@ -1,4 +1,13 @@
-<?php 
+<pre> 
+<?php
+// Olhe o resultado na pagina e descreva aqui o que aconteceu...
+ // Imprimiu todas as informações por Array do código.
+    print_r($_POST);
+    print_r($_GET);
+    exit();
+    ?>
+
+<?php
 
 // o isset() verifica se uma variavel existe
 // $_GET guarda os dados quando enviados por GET
@@ -31,12 +40,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 }else{
     echo "<p style='color: red;'>Não veio nada por POST!</p>";
 }
+
 ?>
 
-<pre>
-    <?php
-    // Olhe o resultado na pagina e descreva aqui o que aconteceu...
- // Imprimiu todas as informações por Array do código.
-    print_r($_SERVER);
-    ?>
-</pre>
